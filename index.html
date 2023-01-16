@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+
+
+<body>
+
+  <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+
+<script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.148.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.148.0/examples/jsm/"
+    }
+  }
+</script>
+<script type="module" src="main.js"></script>
+
+<div class="container">
+
+<canvas class="webgl"></canvas>
+
+<a class="logo" href=""><img src="assets/logo_transparent.png" alt=""></a>
+<div class="date">
+  <h4>
+    6. Gólem Fesztivál <br>
+    Robinson - Szigetek <br>
+    Szécsény
+  </h4> 
+    <h4>20—22.07.2023</h4>
+
+    <a class="jegy_button" href=""><h2>jegyek</h2></a>
+
+</div>
+
+<div class="navigation">
+
+
+  <button class="hamburger" onclick="show()">
+      <div id="bar1" class="bar"></div>
+      <div id="bar2" class="bar"></div>
+      <div id="bar3" class="bar"></div>
+  </button>
+
+  <nav>
+      <ul>
+          <li><a>jegyek</a></li>
+          <li><a>rólunk</a></li>
+          <li><a>fellépők</a></li>
+          <li><a>galéria</a></li>
+      </ul>
+  </nav>
+
+</div>
+
+<div class="panels">
+  <span></span>
+  <span></span>
+  <span></span>
+  
+</div>
+
+
+</div>
+<script src="navigation.js"></script>
+
+</body>
+
+</html>
